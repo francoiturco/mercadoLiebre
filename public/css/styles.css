@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+.espacio{
+    background-color: #EAC926;
+    height: 20px;
+}
+
+.logo_ml{
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: #EAC926;
+    font-weight: 300;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main{
+    width: 90%;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+.icono_search{
+    margin-left: 5px;
+}
+
+article{
+    background-color: #FCFCFC;
+}
+
+footer{
+    background-color: #FCFCFC;
+    border-top: solid 30px #FCFCFC;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.compra_en_cuotas{
+    color: black;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.titulares{
+    background-color: #ebebeb;
+    font-size: 24px;
+    color: #666;
+}
+
+.precio{
+    font-size: 18px;
+    color: black;
+    margin: 1px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin: 1px;
+}
+
+.descripciones{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+footer section{
+    text-align: center;
+    font-size: 12;
+}
+
+.titulo_footer{
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.info_titulo{
+    margin: 1px;
+    color: #666;
+}
+
+.copyright{
+    color: #666;
+    margin-top: 40px;
+}
+
+.iconos_titulos{
+    margin-top: 55px;
+    color: #1259c3;
+    font-size: 2em;
+    line-height: 10px;
+}
+
+.burger-menu i {
+    padding:8px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #1259c3;
+    color: white;
+}
+
+.burger-menu {
+    text-align: center;
+    border-bottom: solid #EAC926 15px;
+}
+
+.producto{
+    margin: 15px;
+    color: #666;
+}
+
+.image{
+    border-bottom: solid 2px #ebebeb;
+}
+
+.truck{
+    color: #39b54a;
+}
+
+.mis_compras{
+    border-bottom: solid #EAC926 5px;
+}
+
+.info_de_productos{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.buscador{
+    margin-left: 20px;
+}
+
+@media (max-width: 360px){
+    .descripciones{
+        display: none;
+    }
+    .site{
+        display: none;
+    }
+    .login_navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu {
+        display: none;
+    }
+}
