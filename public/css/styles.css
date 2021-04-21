@@ -2,15 +2,8 @@
     box-sizing: border-box;
 }
 
-.espacio{
-    background-color: #EAC926;
-    height: 20px;
-}
-
 .logo_ml{
-    width: 100px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    width: 33%;
 }
 
 header{
@@ -138,10 +131,11 @@ footer section{
 
 .truck{
     color: #39b54a;
-}
-
-.mis_compras{
-    border-bottom: solid #EAC926 5px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 38px;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .info_de_productos{
@@ -157,20 +151,124 @@ footer section{
     .descripciones{
         display: none;
     }
+
     .site{
         display: none;
     }
+
     .login_navbar{
         display: none;
+    }
+
+    .primer_contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo_ml{
+        width: 30%;
+    }
+
+    .buscar{
+        width: 70%;
+        font-size: 70%;
+        align-items: center;
+    }
+
+    .buscador{
+        width: 70%;
+        font-size: 70%;
+    }
+
+    .ultima_visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .seccion_ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 
 @media (min-width: 361px){
-    .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .logo_ml{
+        width: 25%;
     }
+
     .burger-menu {
         display: none;
+    }
+
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        align-self: stretch;
+        width: 220px;
+        
+    }
+
+    .ultima_visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .seccion_ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .precio_descuento{
+        display: flex;
+    }
+    
+    .primer_contenedor{
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .segundo_contenedor{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .site{
+        display: flex;
+        justify-content: flex-start;
+        flex: 50%;
+    }
+    
+    .links1{
+        margin: 0px 15px;
+    }
+    
+    .login_navbar{
+        display: flex;
+        justify-content: flex-end;
+        flex: 50%;
+    }
+    
+    .links2{
+        margin: 0px 15px;
+    }
+    .precio{
+        flex: 30%
+    }
+    
+    .descuento{
+        flex: 70%;
     }
 }
 
