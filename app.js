@@ -25,11 +25,11 @@ app.get('/ayuda', (req, res) => {
 });
 
 app.get('/creaTuCuenta', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/creaTuCuenta.html'));
+    res.sendFile(path.join(__dirname, './views/register.html'));
 });
 
 app.get('/ingresa', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/ingresa.html'));
+    res.sendFile(path.join(__dirname, './views/login.html'));
 });
 
 app.get('/misCompras', (req, res) => {

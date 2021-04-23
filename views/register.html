@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Tu Cuenta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="primer_contenedor">
+            <div class="logo_ml">
+                <a href="/home"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></a>
+            </div>
+            <nav>
+                <div class = "buscar">
+                    <input class="buscador" type="text" placeholder="Buscar productos, marcas..." required><button class="icono_search"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="compra_cuotas">
+                <p class="compra_en_cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            </div>
+        </div>
+        <nav class="segundo_contenedor">
+            <ul class="site">
+                <li class="links1"><a href="ofertas">Ofertas</a></li>
+                <li class="links1"><a href="tiendasOficiales">Tiendas Oficiales</a></li>
+                <li class="links1"><a href="vender">Vender</a></li>
+                <li class="links1"><a href="ayuda">Ayuda</a></li>
+            </ul>
+            <ul class="login_navbar">
+                <li class="links2"><a href="creaTuCuenta">Crea Tu Cuenta<i class="far fa-id-card"></i></a></li>
+                <li class="links2"><a href="ingresa">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li class="links2"><a href="misCompras">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars burger"></i>
+        </div>
+    </header>
+    <main class="main">
+        <form action="/home" method="GET" class="formulario-registro">
+            <div class="campo">
+                <label class="label-input" for="name">
+                <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido">
+                </label>
+            </div>
+            <div class="campo">
+                <label class="label-input" for="user-name">
+                <input class="input-datos" type="text" name="nombreDeUsuario" id="user-name" placeholder="Nombre de usuari@">
+            </label>
+            </div>
+            <div class="campo-input">
+                <div>
+                    <label for="user-date" class="titulo-register">Fecha de nacimiento</label>
+                </div>
+                <div>
+                    <input class="input-datos" type="date" name="fechaNacimiento" id="user-date">
+                </div>
+            </div>
+            <div  class="campo">
+                <label class="label-input" for="address">
+                <input class="input-datos" type="text" name="direccion" id="address" placeholder="Domicilio">
+                </label>
+            </div>
+            <div class="campo">
+                <label class="titulo-register">Perfil del usuario</label>
+                <div class="opciones-usuario1">
+                    <div class="opciones-perfil-usuario">
+                        <input type="radio" name="perfilUsuario" id="buyer">
+                        <label for="buyer">Comprador</label>
+                    </div>
+                    <div class="opciones-perfil-usuario">
+                        <input type="radio" name="perfilUsuario" id="seller">
+                        <label for="seller">Vendedor</label>
+                    </div>
+                </div>
+            </div>
+            <div class="campo">
+                <label class="titulo-register">Intereses</label>
+                <div class="opciones-usuario2">
+                    <div class="dentro-opciones-usuario">
+                        <input type="checkbox" name="electrodomesticos" id="electro">
+                        <label for="electro">Electro</label>
+                    </div>
+                    <div class="dentro-opciones-usuario">
+                        <input type="checkbox" name="moda" id="moda">
+                        <label for="moda">Moda</label>
+                    </div>
+                    <div class="dentro-opciones-usuario">
+                        <input type="checkbox" name="hogar" id="home">
+                        <label for="home">Hogar</label>
+                    </div>
+                    <div class="dentro-opciones-usuario">
+                        <input type="checkbox" name="jugueteria" id="games">
+                        <label for="games">Juguetería</label>
+                    </div>
+                    <div class="dentro-opciones-usuario">
+                        <input type="checkbox" name="jvida-sana" id="healty-life">
+                        <label for="healty-life">Vida Sana</label>
+                    </div>
+                </div>
+            </div>
+            <div class="campo">
+                <label>Foto de usuario</label>
+                <input type="file" name="foto-usuario" accept=".jpg">
+            </div>
+            <div class="campo">
+                <label class="label-input" for="contraseña">
+                <input class="input-datos" type="password" name="contraseña-usuario" id="contraseña" placeholder="Contraseña">
+                </label>
+            </div>
+            <div class="campo">
+                <label class="label-input" for="conf-contraseña">
+                <input class="input-datos" type="password" name="conf-contraseña-usuario" id="conf-contraseña" placeholder="Confirmar contraseña">
+                </label>
+            </div>
+            <div class="campo">
+                <a href="/home"><button class="buttons-register">Volver</button></a>
+            </div>
+            <div class="campo">
+                <button class="buttons-register" type="reset">Borrar Datos</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="primer_contenedor">
+            <div class="logo_ml">
+                <a href="/home"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></a>
+            </div>
+            <nav>
+                <div class = "buscar">
+                    <input class="buscador" type="text" placeholder="Buscar productos, marcas..." required><button class="icono_search"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="compra_cuotas">
+                <p class="compra_en_cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            </div>
+        </div>
+        <nav class="segundo_contenedor">
+            <ul class="site">
+                <li class="links1"><a href="ofertas">Ofertas</a></li>
+                <li class="links1"><a href="tiendasOficiales">Tiendas Oficiales</a></li>
+                <li class="links1"><a href="vender">Vender</a></li>
+                <li class="links1"><a href="ayuda">Ayuda</a></li>
+            </ul>
+            <ul class="login_navbar">
+                <li class="links2"><a href="creaTuCuenta">Crea Tu Cuenta<i class="far fa-id-card"></i></a></li>
+                <li class="links2"><a href="ingresa">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li class="links2"><a href="misCompras">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars burger"></i>
+        </div>
+    </header>
+    <main>
+        <form action="/home" method="GET">
+            <div>
+                <label for="user-name">Nombre de usuari@</label>
+                <input type="text" name="nombreDeUsuario" id="user-name">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña-usuario" id="contraseña">
+            </div>
+            <div>
+                <span class="feedback">Nombre o Usuario Incorrecto</span>
+            </div>
+            <div>
+                <a href="/home"><button>Volver</button></a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
