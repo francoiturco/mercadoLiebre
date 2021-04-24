@@ -46,12 +46,12 @@
     </header>
     <main class="main-register">
         <form action="/home" method="GET" class="formulario-registro">
-            <div class="campo">
+            <div class="campo1">
                 <label class="label-input" for="name">
                 <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido">
                 </label>
             </div>
-            <div class="campo">
+            <div class="campo1">
                 <label class="label-input" for="user-name">
                 <input class="input-datos" type="text" name="nombreDeUsuario" id="user-name" placeholder="Nombre de usuari@">
             </label>
@@ -64,7 +64,7 @@
                     <input class="input-fecha" type="date" name="fechaNacimiento" id="user-date">
                 </div>
             </div>
-            <div  class="campo">
+            <div  class="campo1">
                 <label class="label-input" for="address">
                 <input class="input-datos" type="text" name="direccion" id="address" placeholder="Domicilio">
                 </label>
@@ -86,7 +86,7 @@
             </div>
             <div class="campo">
                 <div class="titulo-register">
-                    <label class="titulo-register">Intereses</label>
+                    <label>Intereses</label>
                 </div>
                 <div class="opciones-usuario2">
                     <div class="dentro-opciones-usuario">
@@ -115,22 +115,24 @@
                 <div class="titulo-register">
                     <label>Foto de usuario</label>
                 </div>
-                <input type="file" name="foto-usuario" accept=".jpg">
+                <div class="insert-file">
+                    <input type="file" name="foto-usuario" accept=".jpg">
+                </div>
             </div>
-            <div class="campo">
+            <div class="campo1">
                 <label class="label-input" for="contraseña">
                 <input class="input-datos" type="password" name="contraseña-usuario" id="contraseña" placeholder="Contraseña">
                 </label>
             </div>
-            <div class="campo">
+            <div class="campo1">
                 <label class="label-input" for="conf-contraseña">
                 <input class="input-datos" type="password" name="conf-contraseña-usuario" id="conf-contraseña" placeholder="Confirmar contraseña">
                 </label>
             </div>
-            <div class="campo">
+            <div class="campo1">
                 <a href="/home"><button class="buttons-register">Volver</button></a>
             </div>
-            <div class="campo">
+            <div class="campo1">
                 <button class="buttons-register" type="reset">Borrar Datos</button>
             </div>
         </form>
