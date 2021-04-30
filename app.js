@@ -36,4 +36,4 @@ app.get('/misCompras', (req, res) => {
     res.sendFile(path.join(__dirname, './views/misCompras.html'));
 });
 
-app.listen('3001', () => console.log('Servidor Andando'));
+app.listen(process.env.PORT || 3000, () => console.log('Servidor Andando'));
